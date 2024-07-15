@@ -60,7 +60,11 @@ p {
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns the image vertically with the text */
 }
-
+.play-store .social-icon {
+    width: 50px;  /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns the image vertically with the text */
+}
 .links a {
     display: block;
     margin: 10px 0;

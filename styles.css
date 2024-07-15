@@ -49,19 +49,19 @@ p {
 }
 
 .social-links img {
-    width: 40px; /* Adjust as needed */
+    width: 20px; /* Adjust as needed */
     height: auto;
     vertical-align: middle;
     margin-right: 5px; /* Adjust spacing */
 }
 
 .youtube img {
-    width: 48px; /* Adjust the width as needed */
+    width: 20px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns the image vertically with the text */
 }
 .play-store .social-icon {
-    width: 50px;  /* Adjust the width as needed */
+    width: 20px;  /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns the image vertically with the text */
 }

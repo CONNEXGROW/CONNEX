@@ -60,7 +60,7 @@ p {
     vertical-align: middle; /* Aligns the image vertically with the text */
 }
 .youtube img {
-    width: 20px; /* Adjust the width as needed */
+    width: 25px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns the image vertically with the text */
 }

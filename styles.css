@@ -11,7 +11,7 @@ body {
 
 .container {
     text-align: center;
-    background: #1C2928;
+     background: linear-gradient(135deg, #000c4f, #006d56, #15d200);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

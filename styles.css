@@ -65,6 +65,13 @@ p {
     vertical-align: middle; /* Aligns the image vertically with the text */
 }
 
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 .links a {
     display: block;
     margin: 10px 0;

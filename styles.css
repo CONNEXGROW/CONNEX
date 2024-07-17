@@ -35,7 +35,8 @@ p {
 }
 
 .links a {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     margin: 10px 0;
     padding: 10px;
     text-decoration: none;
@@ -47,4 +48,10 @@ p {
 
 .links a:hover {
     background-color: #94d900; /* Darker green on hover */
+}
+
+.social-logo {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 8px; /* Adjust spacing between logo and text */
 }

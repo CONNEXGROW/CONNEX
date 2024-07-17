@@ -1,22 +1,24 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1C2928;
-    color: #B0FF2E; /* Text color set to light green */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Adjust gradient colors */
+    color: #FFFFFF; /* Text color set to white */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Ensure full viewport height */
+    background-size: cover; /* Ensure gradient covers the entire background */
 }
 
 .container {
     text-align: center;
-    background: #1C2928;
+    background: linear-gradient(135deg, #000000, #001F3F, #0074D9, #7FDBFF); /* Adjust gradient colors to match the image */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 600px; /* Limit container width for content */
     width: 100%; /* Take full width of viewport */
+    color: #FFFFFF; /* Text color set to white */
 }
 
 .profile-pic {
@@ -28,12 +30,12 @@ body {
 
 h1 {
     margin: 10px 0;
-    color: #B0FF2E; /* Header color set to light green */
+    color: #FFFFFF; /* Header color set to white */
 }
 
 p {
     margin: 10px 0;
-    color: #B0FF2E; /* Paragraph color set to light green */
+    color: #FFFFFF; /* Paragraph color set to white */
 }
 
 .links {
@@ -52,13 +54,13 @@ p {
     padding: 10px;
     text-decoration: none;
     color: #1C2928; /* Text color set to dark green */
-    background-color: #B0FF2E; /* Background color set to light green */
+    background-color: #FFFFFF; /* Background color set to white */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .links a:hover {
-    background-color: #94d900; /* Darker green on hover */
+    background-color: #CCCCCC; /* Light gray on hover */
 }
 
 .social-logo {
@@ -68,6 +70,30 @@ p {
 }
 
 .youtube-logo {
-    width: 28px; /* Increase size for YouTube logo */
-    height: 28px; /* Increase size for YouTube logo */
+    width: 25px; /* Increase size for YouTube logo */
+    height: 20px; /* Increase size for YouTube logo */
+}
+
+.playstore-logo {
+    width: 25px; /* Adjust size for Play Store logo */
+    height: 25px; /* Adjust size for Play Store logo */
+}
+
+.coming-soon {
+    background-color: #FF9800; /* Orange background for coming soon link */
+    color: #1C2928; /* Text color set to dark green */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Full width */
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.coming-soon:hover {
+    background-color: #FFB74D; /* Lighter orange on hover */
+    color: #1C2928; /* Text color set to dark green */
 }

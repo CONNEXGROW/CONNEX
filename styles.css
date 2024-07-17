@@ -5,23 +5,16 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1C2928;
-    color: #B0FF2E;
+    background: linear-gradient(135deg, #000c4f, #006d56, #15d200);
+    color: white;
 }
 
 .container {
     text-align: center;
-    background: #1C2928;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 h1 {
@@ -32,63 +25,49 @@ p {
     margin: 10px 0;
 }
 
-.links a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    text-decoration: none;
-    color: #1C2928;
-    background-color: #B0FF2E;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.links a:hover {
-    background-color: #94d900;
-}
-
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+input[type="text"],
+input[type="email"] {
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
 }
 
-.popup-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
+button:hover {
+    background-color: #f1f1f1;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.options a {
+    color: white;
     text-decoration: none;
-    cursor: pointer;
 }
 
-.social-icon {
-    width: 30px; /* Adjust size of social icons as needed */
-    height: 30px;
+.options a:hover {
+    text-decoration: underline;
 }

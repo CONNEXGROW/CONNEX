@@ -3,47 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Screenshot Page</title>
+    <title>Watermarked Content</title>
     <style>
         body {
+            position: relative;
             background-color: black;
             color: white;
             text-align: center;
-            margin-top: 100px;
             font-family: Arial, sans-serif;
-            user-select: none; /* Disable text selection */
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: rgba(255, 255, 255, 0.2);
+            pointer-events: none; /* Prevent interaction */
+            user-select: none;
         }
     </style>
 </head>
 <body>
-    <h1>Screenshot Protection Enabled</h1>
-    <p>Taking screenshots is not allowed on this page.</p>
+    <div class="content">
+        <h1>Protected Content</h1>
+        <p>This page contains a visible watermark to discourage screenshots.</p>
+    </div>
+
+    <div class="watermark">Confidential</div>
 
     <script>
-        // Disable right-click
+        // Block right-clicking
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
 
-        // Disable PrtSc key and common screenshot combinations (Alt + PrtSc, Ctrl + P)
+        // Disable PrintScreen key
         document.addEventListener('keydown', function(e) {
-            // Block common screenshot keys (PrtSc, Alt + PrtSc)
             if (e.key === 'PrintScreen') {
                 alert('Screenshots are disabled on this page.');
                 e.preventDefault();
             }
-
-            // Disable screenshot using Ctrl + P (print)
-            if (e.ctrlKey && e.key === 'p') {
-                alert('Printing is disabled on this page.');
-                e.preventDefault();
-            }
-        });
-
-        // Disable other screenshot tools like Snipping Tool (Windows + Shift + S)
-        window.addEventListener('blur', function() {
-            alert('Taking screenshots is disabled on this page.');
-            window.focus();
         });
     </script>
 </body>

@@ -3,49 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watermarked Content</title>
+    <title>Chrome Tab Simulation</title>
     <style>
         body {
-            position: relative;
-            background-color: black;
-            color: white;
-            text-align: center;
             font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
         }
 
-        .watermark {
-            position: absolute;
+        #popup {
+            display: none; /* Hide the popup initially */
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 48px;
-            color: rgba(255, 255, 255, 0.2);
-            pointer-events: none; /* Prevent interaction */
-            user-select: none;
+            width: 80%;
+            height: 80%;
+            border: 2px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        #popupHeader {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #popupContent {
+            padding: 20px;
+        }
+
+        #closeBtn {
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+            float: right;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Protected Content</h1>
-        <p>This page contains a visible watermark to discourage screenshots.</p>
+
+    <h1>Simulate a Chrome Tab Pop-Up</h1>
+    <button id="openPopupBtn">Open Pop-Up</button>
+
+    <div id="popup">
+        <div id="popupHeader">
+            <span id="closeBtn">✖ Close</span>
+            <h2>Popup Window</h2>
+        </div>
+        <div id="popupContent">
+            <p>This is a simulated Chrome tab pop-up!</p>
+            <p>You can put any content here, including forms, images, or even videos.</p>
+        </div>
     </div>
 
-    <div class="watermark">Confidential</div>
-
     <script>
-        // Block right-clicking
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
+        // Open the pop-up
+        document.getElementById('openPopupBtn').onclick = function() {
+            document.getElementById('popup').style.display = 'block';
+        };
 
-        // Disable PrintScreen key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'PrintScreen') {
-                alert('Screenshots are disabled on this page.');
-                e.preventDefault();
-            }
-        });
+        // Close the pop-up
+        document.getElementById('closeBtn').onclick = function() {
+            document.getElementById('popup').style.display = 'none';
+        };
     </script>
+
 </body>
 </html>
